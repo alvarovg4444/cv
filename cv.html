@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvaro Villardón - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact; /* Ensures background colors and text colors are printed */
+            print-color-adjust: exact;
+        }
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                width: 210mm; /* A4 width */
+                height: 297mm; /* A4 height */
+                font-size: 10pt; /* Adjust base font size for print if needed */
+            }
+            .page-container {
+                width: 100%;
+                max-width: 100%;
+                padding: 15mm; /* Standard A4 margins */
+                box-shadow: none !important; /* Remove shadow for printing */
+            }
+            .no-print-break {
+                page-break-inside: avoid;
+            }
+            a {
+                color: inherit !important; /* Ensure links are printed in their styled color */
+                text-decoration: none !important; /* Remove underline from links in print */
+            }
+            .print-text-purple-600 { /* Custom class to ensure purple color prints */
+                 color: #9333EA !important;
+            }
+            .print-text-yellow-500 { /* Custom class to ensure yellow color prints */
+                 color: #EAB308 !important;
+            }
+             .print-bg-gray-50 { /* Lighter gray for print background */
+                background-color: #F9FAFB !important;
+            }
+            .print-border-gray-300 {
+                border-color: #D1D5DB !important;
+            }
+        }
+        .icon-spacing {
+            margin-right: 0.5rem; /* 8px */
+        }
+        .section-icon {
+            color: #EAB308; /* Yellow for icons */
+        }
+        .print-section-icon {
+             color: #EAB308 !important; /* Yellow for icons in print */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 print-bg-gray-50 flex justify-center items-start min-h-screen py-8 md:py-12">
+    <!-- Main container for the CV page. 
+         'isolate' creates a new stacking context which can help with shadow rendering.
+         'shadow-2xl' provides the drop shadow effect.
+    -->
+    <div class="page-container isolate bg-white shadow-2xl rounded-lg p-6 md:p-10 max-w-4xl w-full">
+        <header class="text-center border-b print-border-gray-300 pb-6 mb-6">
+            <h1 class="text-4xl font-bold text-gray-800">ÁLVARO VILLARDÓN</h1>
+            <p class="text-xl text-purple-600 print-text-purple-600 font-semibold mt-1">Principal Digital Marketing & Growth | B2B SaaS</p>
+            <div class="mt-3 text-sm text-gray-600 flex flex-wrap justify-center items-center gap-x-4 gap-y-1">
+                <span><span class="icon-spacing section-icon print-section-icon">📍</span>Vienna, Austria</span>
+                <span><span class="icon-spacing section-icon print-section-icon">📞</span>(+43) 670 401 4913</span>
+                <span><span class="icon-spacing section-icon print-section-icon">📧</span><a href="mailto:alvarovillardon@gmail.com" class="text-purple-600 print-text-purple-600 hover:underline">alvarovillardon@gmail.com</a></span>
+                <span><span class="icon-spacing section-icon print-section-icon">🔗</span><a href="https://linkedin.com/in/alvarovillardon" target="_blank" class="text-purple-600 print-text-purple-600 hover:underline">linkedin.com/in/alvarovillardon</a></span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8">
+            <div class="md:col-span-2">
+                <section class="mb-6 no-print-break">
+                    <h2 class="text-2xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-3">
+                        <span class="section-icon print-section-icon">📈</span> Summary
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Growth-driven marketer with 8+ years in B2B SaaS and tech, blending creative storytelling with data-powered automation. Helped scale chatlyn from launch to €1 M ARR and supported a €10 M Series A. Fluent in Spanish & English; campaigns live in 20+ markets.
+                    </p>
+                </section>
+
+                <section class="mb-6 no-print-break">
+                    <h2 class="text-2xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-4">
+                        <span class="section-icon print-section-icon">💼</span> Professional Experience
+                    </h2>
+                    <div class="space-y-5">
+                        <article class="no-print-break">
+                            <h3 class="text-lg font-semibold text-gray-800">Principal Digital Marketing & Growth – chatlyn GmbH</h3>
+                            <p class="text-sm text-gray-500">Vienna, AT | Jan 2023 – Present</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1 pl-4">
+                                <li>Own all digital channels: performance, SEO, content, lifecycle and growth.</li>
+                                <li>Lead a network of freelancers plus SDRs; built CRM and billing processes from scratch.</li>
+                                <li>Drove market research that led to the launch of an AI chatbot product.</li>
+                                <li>Scaled revenue from zero to €1 M ARR and contributed to securing a €10 M Series A (Apr 2025).</li>
+                            </ul>
+                        </article>
+                        <article class="no-print-break">
+                            <h3 class="text-lg font-semibold text-gray-800">Digital Marketing Manager – PlanRadar GmbH</h3>
+                            <p class="text-sm text-gray-500">Vienna, AT | Sep 2021 – Jan 2023</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1 pl-4">
+                                <li>Directed paid search & social across 16 countries.</li>
+                                <li>Achieved an 8× revenue boost (2021 → 2022) and 160% YoY growth in the Spanish market.</li>
+                            </ul>
+                        </article>
+                        <article class="no-print-break">
+                            <h3 class="text-lg font-semibold text-gray-800">Performance Ads Consultant (Freelance)</h3>
+                            <p class="text-sm text-gray-500">Remote | Aug 2020 – Sep 2021</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1 pl-4">
+                                <li>Planned and optimised Google, Facebook, LinkedIn and other ad campaigns for e-commerce, SaaS and apps.</li>
+                            </ul>
+                        </article>
+                        <article class="no-print-break">
+                            <h3 class="text-lg font-semibold text-gray-800">Marketing Strategist – PAVIGYM / PRAMA</h3>
+                            <p class="text-sm text-gray-500">Alicante, ES | Jun 2019 – Aug 2020</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1 pl-4">
+                                <li>Led marketing for PRAMA’s first boutique; created the franchise expansion playbook.</li>
+                            </ul>
+                        </article>
+                        <article class="no-print-break">
+                            <h3 class="text-lg font-semibold text-gray-800">Digital Marketing Technician – PAVIGYM</h3>
+                            <p class="text-sm text-gray-500">Alicante, ES | Jun 2018 – May 2019</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1 pl-4">
+                                <li>Supported SEA/PPC, SMM, SEO, copywriting and WordPress development.</li>
+                            </ul>
+                        </article>
+                        <article class="no-print-break">
+                            <h3 class="text-lg font-semibold text-gray-800">Founder – The Highest Fashion</h3>
+                            <p class="text-sm text-gray-500">Remote | Oct 2015 – Oct 2021</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-1 space-y-1 pl-4">
+                                <li>Built a men’s fashion network to 1 M+ followers and 30K organic visits/month.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="mb-6 no-print-break">
+                    <h2 class="text-2xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-3">
+                        <span class="section-icon print-section-icon">🎓</span> Education & Certifications
+                    </h2>
+                    <div class="space-y-3">
+                        <article class="no-print-break">
+                            <p class="text-gray-700"><span class="font-semibold">MBA,</span> Escuela de Negocios Europea de Barcelona (ENEB), 2022.</p>
+                        </article>
+                        <article class="no-print-break">
+                             <p class="text-gray-700"><span class="font-semibold">M.Sc. Marketing Management,</span> University of Alicante, 2019.</p>
+                        </article>
+                        <article class="no-print-break">
+                            <p class="text-gray-700"><span class="font-semibold">SEO Manager Certificate,</span> BA Academy, 2020.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <div class="md:col-span-1 space-y-6">
+                 <section class="no-print-break">
+                    <h2 class="text-xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-3">
+                        <span class="section-icon print-section-icon">🛠️</span> Core Competencies
+                    </h2>
+                    <ul class="list-none space-y-1 pl-1">
+                        <li class="text-gray-700">Marketing Automation</li>
+                        <li class="text-gray-700">Performance & SEO</li>
+                        <li class="text-gray-700">Demand Gen</li>
+                        <li class="text-gray-700">Lifecycle/RevOps</li>
+                        <li class="text-gray-700">AI/LLM Experimentation</li>
+                        <li class="text-gray-700">Analytics</li>
+                        <li class="text-gray-700">Cross-functional Leadership</li>
+                    </ul>
+                </section>
+
+                <section class="no-print-break">
+                    <h2 class="text-xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-3">
+                        <span class="section-icon print-section-icon">🗣️</span> Languages
+                    </h2>
+                    <ul class="list-none space-y-1 pl-1">
+                        <li class="text-gray-700">Spanish (Native)</li>
+                        <li class="text-gray-700">English (Fluent)</li>
+                        <li class="text-gray-700">German (Elementary)</li>
+                        <li class="text-gray-700">Russian (Elementary)</li>
+                    </ul>
+                </section>
+
+                <section class="no-print-break">
+                    <h2 class="text-xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-3">
+                        <span class="section-icon print-section-icon">🔧</span> Tools
+                    </h2>
+                     <p class="text-gray-700 leading-relaxed">
+                        HubSpot · GA4 · Looker Studio · Pipedrive · Zapier & Make · Google/LinkedIn/Facebook Ads · WordPress · Figma · Adobe CC · <span class="font-semibold">Claude</span> · <span class="font-semibold">OpenAI</span> · <span class="font-semibold">Gemini</span>
+                    </p>
+                </section>
+
+                <section class="no-print-break">
+                    <h2 class="text-xl font-bold text-purple-600 print-text-purple-600 border-b print-border-gray-300 pb-2 mb-3">
+                        <span class="section-icon print-section-icon">🎨</span> Side Projects & Interests
+                    </h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
+                        <li><span class="section-icon print-section-icon">🎙️</span> Host, “Coffee Spanish” podcast.</li>
+                        <li><span class="section-icon print-section-icon">🕹️</span> Co-founder, Vime Games indie studio (2020).</li>
+                        <li><span class="section-icon print-section-icon">👕</span> Founder, CEOVILLAR street-wear brand (2018).</li>
+                        <li><span class="section-icon print-section-icon">🖼️</span> Street-art creator @eyenotic; occasional viral campaigns.</li>
+                        <li><span class="section-icon print-section-icon">☕</span> Home-barista, racquet & water-sports fan, yogi.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
